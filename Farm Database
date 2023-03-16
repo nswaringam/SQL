@@ -1,0 +1,28 @@
+-- CREATING A NEW TABLE--
+
+CREATE TABLE farm (id INTEGER PRIMARY KEY, item TEXT, price INTEGER, color TEXT, quantity INTEGER);
+
+--INSERTING ALL THE VALUES FOR EACH COLUMN--
+
+INSERT INTO farm VALUES (1, "dog", 10, "brown", 20);
+INSERT INTO farm VALUES (2, "chicken", 5, "white", 50);
+INSERT INTO farm VALUES (3, "cow", 25, "black", 4);
+INSERT INTO farm VALUES (4, "duck", 6, "grey", 9);
+INSERT INTO farm VALUES (5, "bull", 50, "red", 7);
+INSERT INTO farm VALUES (6, "rooster", 15, "tan", 2);
+INSERT INTO farm VALUES (7, "pig", 12, "pink", 5);
+INSERT INTO farm VALUES (8, "cat", 8, "merle", 3);
+INSERT INTO farm VALUES (9, "goat", 14, "white", 6);
+INSERT INTO farm VALUES (10, "horse", 30, "roan", 18);
+INSERT INTO farm VALUES (11, "sheep", 15, "wooly", 15);
+INSERT INTO farm VALUES (12, "cattle", 40, "dirty", 32);
+INSERT INTO farm VALUES (13, "mice", 4, "black", 3);
+INSERT INTO farm VALUES (14, "mule", 22, "brown", 6);
+INSERT INTO farm VALUES (15, "bunny", 8, "grey", 10);
+
+--ORDERING THE DATA QUANTITY FROM SMALLEST TO LARGEST--
+
+SELECT*FROM farm ORDER BY quantity;
+
+--GETTING TOTAL SUM OF THE QUANITY OF FARM ANIMALS
+SELECT sum(quantity) FROM farm
